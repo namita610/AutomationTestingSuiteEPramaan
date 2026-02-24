@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.demo.seleniumspring.util.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="ePramaan Staging(failed)">
+    <classes>
+      <class name="com.seleniumspring.epramaan.staging.TestLoginUsingAadhar">
+        <methods>
+          <include name="loginWithAadhaarTest"/>
+        </methods>
+      </class> <!-- com.seleniumspring.epramaan.staging.TestLoginUsingAadhar -->
+    </classes>
+  </test> <!-- ePramaan Staging(failed) -->
+</suite> <!-- Failed suite [Suite] -->
