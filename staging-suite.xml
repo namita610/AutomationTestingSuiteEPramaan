@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ePramaan Staging">
+    <test thread-count="5" name="Staging Tests">
+        <classes>
+           <class name="com.seleniumspring.epramaan.staging.LoginUsingUserName"/>
+             <class name="com.seleniumspring.epramaan.staging.LoginUsingDL"/>
+             <class name="com.seleniumspring.epramaan.staging.LoginwithPan"/>
+             <class name="com.seleniumspring.epramaan.staging.TestLoginUsingAadhar"/>
+             <class name="com.seleniumspring.epramaan.staging.LoginUsingMobileNo"/>
+              <class name="com.seleniumspring.epramaan.staging.Dashboard"/>
+              <class name="com.seleniumspring.epramaan.staging.ViewTransactionHistory"/>
+        </classes>
+    </test>
+</suite>

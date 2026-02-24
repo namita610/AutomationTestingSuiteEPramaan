@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ePramaan Testing">
+
+    <!-- Add the listener for ExtentReports -->
+    <listeners>
+        <listener class-name="com.demo.seleniumspring.util.TestListener"/>
+    </listeners>
+
+    <test thread-count="5" name="EPramaan Test">
+        <classes>
+
+            <!-- Login Test Cases -->
+            <class name="com.seleniumspring.epramaan.staging.LoginUsingUserName"/>
+           <!-- <class name="com.seleniumspring.epramaan.staging.LoginUsingMobileNo"/>-->
+           <!-- <class name="com.seleniumspring.epramaan.staging.LoginUsingPan"/>
+            <class name="com.seleniumspring.epramaan.staging.LoginUsingDLTest"/>-->
+            <class name="com.seleniumspring.epramaan.staging.TestLoginUsingAadhar"/>
+
+     
+            <class name="com.seleniumspring.epramaan.staging.ViewProfile"/>
+            <class name="com.seleniumspring.epramaan.staging.DashboardTest"/>
+            <class name="com.seleniumspring.epramaan.staging.ViewTransactionHistory"/>
+            <class name="com.seleniumspring.epramaan.staging.UserEditProfile"/>
+
+         
+            <class name="com.seleniumspring.epramaan.staging.UnlockAccountByEmail"/>
+            <class name="com.seleniumspring.epramaan.staging.UnlockAccountByMobile"/>
+
+            
+            <class name="com.seleniumspring.epramaan.staging.UserAadharKYC"/>
+            <class name="com.seleniumspring.epramaan.staging.UserDLKYC"/>
+	            <class name="com.seleniumspring.epramaan.staging.UserPanKYC"/>
+            <class name="com.seleniumspring.epramaan.staging.ResetPassword"/>
+            
+             
+             <class name="com.seleniumspring.epramaan.staging.ForgotPasswordAadharNumber"/>
+            <!--<class name="com.seleniumspring.epramaan.staging.ForgotPasswordDL"/>
+            <class name="com.seleniumspring.epramaan.staging.ForgotPasswordMobileNumber"/>
+            <class name="com.seleniumspring.epramaan.staging.ForgotPasswordDL"/-->>
+           <!-- <class name="com.seleniumspring.epramaan.staging.ForgotPasswordPan"/>-->
+       
+
+        </classes>
+    </test>
+
+</suite>

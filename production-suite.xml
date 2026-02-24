@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ePramaan Production">
+    <test thread-count="5" name="Production Tests">
+        <classes>
+            <class name="com.seleniumspring.epramaan.production.TestLoginUsingAadhar"/>
+            <class name="com.seleniumspring.epramaan.production.LoginUsingPan"/>
+            <class name="com.seleniumspring.epramaan.production.LoginUsingUserName"/>
+            <class name="com.seleniumspring.epramaan.production.Dashboard"/>
+        </classes>
+    </test>
+</suite>
